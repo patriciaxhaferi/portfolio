@@ -1,5 +1,7 @@
 body{
     background-color: rgb(255, 255, 255);
+    background-image: url(dotg.png);
+    background-size: cover;
     margin: 0;
     padding: 0;
 } 
@@ -41,9 +43,6 @@ body{
     font-size: 10px;
 }
 
-.navbar a:hover{
-    background: #c3c5c8d0;
-}
 
 .logo {
     float: left;
@@ -52,14 +51,15 @@ body{
 }
 
 .main{
-    background-image: url(wave-haikei.svg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(dot.png);
+    max-width: 900px;
+    background-position: right;
     background-repeat: no-repeat;
-    padding: 150px;
-    width: 1250px;
+    padding: 110px;
+    width: 1150px;
     line-height: -1.5;
 }
+
 
 h1, h4{
     font-family: 'cormorant unicase static';
@@ -128,8 +128,36 @@ h1, h4{
 
 .footer-column {
     width: 33.33%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
 }
 
+.footer-main p{
+    color: #ff7420;
+    font-family: 'cormorant unicase static';
+    font-weight: bolder;
+    font-size: 27pt;
+
+}
+
+.footer-column a{
+    color: #000000;
+}
+
+@keyframes textAnimation {
+    0%, 100% {
+        font-size: 150%; /* Start and end font size (normal size) */
+    }
+    50% {
+        font-size: 200%; /* Peak font size (larger size) */
+    }
+}
+
+#job-title {
+    display: inline-block; /* Ensure inline display */
+    animation: textAnimation 2s infinite; /* Apply animation infinitely */
+}
 /**
 .footer {
     background-image: url();
